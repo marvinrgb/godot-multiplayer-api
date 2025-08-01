@@ -21,7 +21,7 @@ app.use((req,res,next) => {
   next();
 })
 
-// forwards all requests under /api to the routeManager, wich distributes them further
+// forwards all requests under /api to the routeManager, which distributes them further
 app.use('/api', RouteManager);
 
 // starts the server under the specified port
